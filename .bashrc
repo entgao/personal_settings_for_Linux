@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# 重新映射按键，因为蓝牙重连后.profile配置的按键映射会不起效
+xmodmap -e "clear Lock" -e "keycode 66 = Escape"
