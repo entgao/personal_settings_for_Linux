@@ -117,4 +117,5 @@ if ! shopt -oq posix; then
 fi
 
 # 重新映射按键，因为蓝牙重连后.profile配置的按键映射会不起效
-xmodmap -e "clear Lock" -e "keycode 66 = Escape"
+#xmodmap -e "clear Lock" -e "keycode 66 = Escape"
+# 会导致打开终端卡顿，所以取消，重连后手动运行.profile吧
